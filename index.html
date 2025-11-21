@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Summarizer</title>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="logo">
+        <span class="icon">🤖</span>
+        <h1>AI News Summarizer</h1>
+      </div>
+      <p class="tagline">Get concise AI-powered summaries of the latest news</p>
+    </header>
+
+    <div class="input-section">
+      <div class="form-group">
+        <label for="newsUrl">News Article URL or Topic</label>
+        <input type="text" id="newsUrl" placeholder="Enter news URL or search topic...">
+      </div>
+      <button id="summarizeBtn" class="btn-primary">
+        <span class="btn-icon">✨</span> Summarize News
+      </button>
+    </div>
+
+    <div id="loadingSection" class="loading-section" style="display: none;">
+      <div class="loader"></div>
+      <p>Analyzing and summarizing news...</p>
+    </div>
+
+    <div id="resultsSection" class="results-section" style="display: none;">
+      <h2>Summary</h2>
+      <div id="summaryContent" class="summary-content"></div>
+      
+      <div class="summary-details">
+        <div class="detail-item">
+          <span class="label">Key Points:</span>
+          <ul id="keyPoints"></ul>
+        </div>
+        <div class="detail-item">
+          <span class="label">Sentiment:</span>
+          <span id="sentiment" class="badge"></span>
+        </div>
+        <div class="detail-item">
+          <span class="label">Category:</span>
+          <span id="category" class="badge"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="history-section">
+      <h3>Recent Summaries</h3>
+      <div id="historyList" class="history-list"></div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>Powered by AI • Built for Comet Browser Automation</p>
+  </footer>
+</body>
+</html>
